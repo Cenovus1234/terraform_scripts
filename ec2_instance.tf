@@ -1,8 +1,7 @@
 provider "aws" {
         region = "us-east-2"
-        profile = "${var.aws_profile}"
-        #shared_credentials_file = "/home/ubuntu/.aws/credentials"
-        #profile = "test"
+        shared_credentials_file = "/home/ubuntu/.aws/credentials"
+        profile = "default"
         #access_key = "${aws configure get aws_access_key_id}"
         #secret_key = "${aws configure get aws_secret_access_key}"
  }
