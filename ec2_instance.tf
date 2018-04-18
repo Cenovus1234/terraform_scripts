@@ -8,7 +8,7 @@ provider "aws" {
         ami = "ami-916f59f4"
         instance_type = "t2.micro"
         key_name = "${var.key_name}"
-        security_groups= ["JenkinsSG"]
+        security_groups= ["tan-sec"]
         tags {
          Name = "terraform-instance"
         }
