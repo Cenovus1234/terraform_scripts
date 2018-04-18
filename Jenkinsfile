@@ -2,7 +2,7 @@ node{
    
    stage("App Build started"){
       echo 'App build started..'
-      git credentialsId: 'GithubID', url: 'https://github.com/padmaavathy/terraform_scripts.git'
+      git credentialsId: 'GithubID', url: 'https://github.com/Cenovus1234/terraform_scripts.git'
       }
    stage("Terraform init"){
    sh 'terraform init'
