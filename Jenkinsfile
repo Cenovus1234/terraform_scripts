@@ -8,10 +8,10 @@ node{
    sh 'terraform init'
    }
    stage("Terraform plan"){
-   sh 'terraform plan -var key_name=padmavathy'
+   sh 'terraform plan -var key_name=Devops_key'
    }
    stage("Terraform apply"){
-   sh 'terraform apply -var key_name=padmavathy'
+   sh 'terraform apply -var key_name=Devops_key'
    }
    stage("Terraform Destroy"){
    }
